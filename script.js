@@ -38,10 +38,12 @@ const showDraw = () => {
 }
 
 startButton.addEventListener("click", (e) => {
-  let p = document.createElement("p")
-  let content = showDraw()
-  classicNumbers = []
-  starsNumbers = []
-  p.innerText = content
-  displayDraw.appendChild(p)
+  for (let i = 0; i < numberOfDraws.value; i++) {
+    let p = document.createElement("p")
+    let content = showDraw()
+    classicNumbers = []
+    starsNumbers = []
+    p.innerText = content
+    displayDraw.appendChild(p)
+  }
 })
