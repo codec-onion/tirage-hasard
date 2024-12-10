@@ -19,7 +19,7 @@ const createDraw = () => {
     }
     classicNumbers.push(randomNumber)
   }
-  max = 12
+  max = 13
   for (let i = 0; i < totalStars; i++) {
     let randomNumber = createRandomNumber(min, max)
     while (starsNumbers.includes(randomNumber)) {
