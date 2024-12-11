@@ -29,18 +29,17 @@ const createDraw = () => {
   }
   classicNumbers.sort((a, b) => a - b)
   starsNumbers.sort((a, b) => a - b)
+  for (let i in starsNumbers) {
+    starsNumbers[i] = "⭐︎" + starsNumbers[i]
+  }
 
   return classicNumbers.concat(starsNumbers).join(" ")
-}
-
-const showDraw = () => {
-  return createDraw()
 }
 
 startButton.addEventListener("click", (e) => {
   for (let i = 0; i < numberOfDraws.value; i++) {
     let p = document.createElement("p")
-    let content = showDraw()
+    let content = createDraw()
     classicNumbers = []
     starsNumbers = []
     p.innerText = content
