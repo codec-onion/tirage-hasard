@@ -37,6 +37,7 @@ const createDraw = () => {
 }
 
 startButton.addEventListener("click", (e) => {
+  displayDraw.innerHTML = ""
   for (let i = 0; i < numberOfDraws.value; i++) {
     let p = document.createElement("p")
     let content = createDraw()
