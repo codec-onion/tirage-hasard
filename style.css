@@ -9,7 +9,9 @@
 }
 
 body {
-  padding: 0 10px 0 10px;
+  position: relative;
+  height: 100%;
+  padding: 0 10px 80px 10px;
   background-color: #7accf0;
 }
 
@@ -42,4 +44,15 @@ input {
 
 .result {
   font-size: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 110%;
+  padding: 20px;
+  background-color: #004777;
+  text-align: center;
+  color: white;
+  margin-left: -20px;
 }
